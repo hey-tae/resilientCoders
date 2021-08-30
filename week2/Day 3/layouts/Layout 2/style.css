@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+}
+
+
+header{
+    height: 15vh;
+    border: 2px solid green;
+    clear: both;
+    background: #388659;
+}
+
+.top{
+    height: 35vh;
+    border: 2px dashed green;
+    background: #52AA5E;
+}
+
+.btm1{
+    height: 35vh;
+    border: 2px dashed green;
+    width: 35%;
+    float: left;
+    background: #52aa8a;
+}
+
+.btm2{
+    height: 35vh;
+    border: 2px dashed blue;
+    width: 65%;
+    float: right;
+    background: #3aaed8;
+}
+
+footer{
+    height: 15vh;
+    border: 2px solid turquoise;
+    clear: both;
+    background: #2bd9fe;
+}

@@ -1,0 +1,168 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     margin: 5px;
+}
+
+.leftSideContainer{
+     width: 50%;
+     clear: right;
+}
+
+.mainArticle{
+     border: 2px solid black;
+     width: 100%;
+     height: 50vh;
+     clear: both;
+     background-image: url(https://images.unsplash.com/photo-1593117048792-82341b21f8ae?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG9sZCUyMG1hbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+     background-size: cover;
+     color: white;
+     font-size: 1rem;
+}
+
+/* .leftSideArticlesLeft{
+     float: left;
+} */
+
+.articleLeft{
+     border: 2px solid black;
+     width: 30%;
+     height: 20vh;
+     margin-top: 5px;
+     clear: both;
+     background-image: url(https://images.unsplash.com/photo-1561949925-4430c32f5045?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c2lkZXdhbGt8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+}
+
+.articleLeftBottom{
+     border: 2px solid black;
+     width: 30%;
+     height: 20vh;
+}
+
+.articleLeftBottom{
+     padding: 10px;
+}
+
+.leftSideArticlesRight{
+     float: right;
+     width: 800px;
+     
+     clear: right;
+     margin: -271px -400px;
+}
+.articleRightTop, .articleRightBtm{
+     border: 2px solid black;
+     width: 50%;
+     height: 19.5vh;
+     margin: 5px 0;
+}
+
+.articleRightTop{
+     padding: 10px;
+}
+
+.articleRightBtm{
+     background: darkred;
+     color: white;
+     padding: 10px;
+}
+
+.banner{
+     border: 2px solid black;
+     width: 100%;
+     height: 11vh;
+     margin-top: 30px;
+}
+
+
+.sectionRightSide{
+     width: 50%;
+     
+}
+
+section h3{
+     padding: 5px;
+}
+
+section aside{
+     border: 2px solid black;
+     width: 50%;
+     height: 100vh;
+     float: right;
+     clear: both;
+     margin-bottom: 800px 0;
+}
+
+aside section{
+     background: grey;
+     height: 110.5px;
+     border-bottom: 2px solid black;
+     padding: 10px;
+}
+
+aside span{
+     font-weight: bold;
+     color: lightgray;
+}
+
+aside h4{
+
+}
+/* .slatest{
+     border: 2px solid black;
+     width: 100px;
+     height: 40vh;
+} */
+
+/* .articleRightBtm{
+     border: 2px solid black;
+     width: 50%;
+     height: 40vh;
+} */
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

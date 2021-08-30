@@ -1,0 +1,200 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-min-height: 0;
+       min-height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  .alignright {
+      float: right;
+      padding: 0 0 10px 10px; /* note the padding around a right floated image */
+  }
+  
+  .alignleft {
+      float: left;
+      padding: 0 10px 10px 0; /* note the padding around a left floated image */
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  body {
+       color: #000;
+       font-size: 12px;
+       line-min-height: 1.4;
+       font-family: Helvetica, Arial, sans-serif;
+       background: rgb(101, 118, 136);
+       font-family: 'Roboto', sans-serif;
+       
+  }
+  
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+
+/* nav menu */
+  header{
+    min-height: 10vh;
+}
+
+header ul{
+    list-style: none;
+     display: flex; 
+     justify-content: space-between;
+     padding: 12px 24px;
+
+
+}
+
+  
+/* main top section */
+
+  .topSection{
+      /* width: 100%; */
+      min-height: 100vh;
+      background: rgb(101, 118, 136);
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+
+  }
+  
+  h1{
+      font-size: 3.5em;    
+      text-align:center;
+      font-weight: 400;
+    
+  }
+
+  p{
+      font-size: 1.2rem;
+      font-weight: lighter;
+      padding: 50px;
+      text-align: center;
+      margin: 0;
+  }
+
+  span{
+      margin-top: 75px;
+  }
+  .fa-play-circle{
+      font-size: 2rem;
+      font-weight: lighter;
+  }
+
+  .video{
+      font-size: 1.5rem;
+      font-weight: lighter;
+      margin-left: 10px;
+    
+  }
+
+  .withVideo{
+      min-height: 5vh;
+  }
+/* why section */
+
+.whySection{
+    background: white;
+    min-height: 30vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.whyP{
+    width: 75%;
+    font-size: 16px;
+    
+}
+
+
+/* box section */
+
+.boxSection{
+    background: rgb(219, 223, 226);
+    margin: 0;
+    padding: 0;
+    min-height: 70vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+div{
+    width: 250px;
+    height: 250px;
+    background: rgb(101, 118, 136);
+    margin-left: 30%;
+    /* margin-top: 25px; */
+}
+
+.leftBox, .rightBox{
+    padding: 25px
+}
+/* Volunteer section */
+
+.volunSection{
+    background: white;
+    margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+/* footer */
+
+footer{
+    background: black;
+    margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: rgb(98, 115, 133);
+}
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  /* laptop screen */
+
+  @media only screen and (min-width: 800px){
+    .boxSection{
+        flex-direction: row;
+    }
+  }
+
+  @media only screen and (max-width: 1024px){
+    .boxSection{
+        flex-direction: column;
+    }
+  }
+

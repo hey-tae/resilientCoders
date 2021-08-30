@@ -1,0 +1,330 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  .alignright {
+      float: right;
+      padding: 0 0 10px 10px; /* note the padding around a right floated image */
+  }
+  
+  .alignleft {
+      float: left;
+      padding: 0 10px 10px 0; /* note the padding around a left floated image */
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  body {
+       color: #000;
+       font-size: 12px;
+       line-height: 1.4;
+       font-family: Helvetica, Arial, sans-serif;
+  }
+  
+  a{
+      color: black;
+  }
+
+  ul{
+      padding: 15px;
+  }
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  
+  /* header + navs */
+  
+
+.stickyNav li{
+    margin-right: 20px;
+}
+
+.stickyNav li a{
+    text-decoration: none;
+}  
+.rightSideMenu{
+    float: right;
+}
+
+/* language buttons */
+.language {
+      /* border: 1px solid black; */
+      margin-left: 40%;
+      padding-right: 0;
+      padding-top: 5px; 
+      padding-bottom: 0;
+      border-top: 2px solid black;
+      border-left: 2px solid black;
+      border-right: 2px solid black;
+      border-radius: 20% 20% 0 0;
+      width: 16.5%;
+      position: relative;
+      bottom: 34px; 
+      float: left;
+      z-index: 1;
+      background: white;
+
+}
+
+.language li{
+    float: left;
+    list-style: none;
+    margin-right: 20px;
+    
+}
+
+.language li a{
+    text-decoration: none;
+    
+}
+
+/* title section */
+
+.title{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.logo{
+    margin-left: 25%;
+   
+}
+
+/* under main title logo  */
+
+.underTitle{
+    margin-left: 15%;
+}
+
+
+.underTitle li{
+    float: left;
+    list-style: none;
+    text-decoration: none;
+    width: 15%;
+    margin-right: 5px;
+    
+}
+
+/* main navigation  */
+nav ul li{
+      list-style: none;
+      float: left;
+      margin-right: 25px;
+      margin-left: 7px;
+  }
+
+  .mainNav{
+      /* border: 1px solid black; */
+      
+  }
+
+
+/* LEFT SECTION */
+
+
+.subTitle{
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.trumpDNC{
+    float: left;
+    /* border: 2px solid green; */
+    /* width: 25%; */
+    width: 20%;
+}
+
+.mainHeading{
+    font-size: 1.5rem;
+    width: 100%;
+    font-style: italic;
+    color: black;
+}
+
+
+h6{
+    /* width: 15%; */
+    font-size: 10px;
+    color: gray;
+    font-weight: lighter;
+}
+
+.time{
+    color: darkred;
+}
+
+.info{
+    list-style: circle;
+    /* width: 15%; */
+   
+}
+
+.confirmHighlights{
+    /* width: 15%; */
+}
+
+.confirmHi{
+    font-size: 1.1rem;
+    /* width: 15%; */
+    font-style: italic;
+}
+
+.confirmInfo{
+    /* width: 15%; */
+} 
+
+
+/* MIDDLE SECTION */
+
+
+
+.middle{
+    /* border: 2px solid black; */
+    /* width: 30%; */
+    height: 100vh;
+    float: left;
+    width: 35%;
+    
+}
+
+.trumpMain{
+    /* width: 100%; */
+    height: 40vh;
+    background: lightpink;
+}
+
+.fa-play{
+    color: white;
+    font-size: 3rem;
+    padding-left: 15px;
+    margin-top: 100px;
+}
+
+.length{
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+h2{
+    font-size: 2rem;
+    color: white;
+    padding-left: 30px;
+
+}
+
+.caption{
+    text-align: right;
+}
+
+.conference{
+    font-size: 12px;
+}
+
+.middleList{
+    padding: 0;
+}
+
+.middleList li{
+list-style: none;
+float: left;
+margin: 5px;
+
+}
+
+.cedeControl{
+    /* border-top: 2px solid green; */
+    padding-top: 15px;
+    height: 15vh;
+}
+
+.authorMid{
+    /* width: 100%; */
+}
+
+.trumpSession{
+    margin: 0;
+}
+
+/* right side */
+
+.right{
+    /* border: 2px solid red; */
+    width: 40%;
+    float: left;
+    margin-left: 5px;
+}
+
+
+
+.obama{
+    width: 50%;
+    float: left;
+    border-left: 1px solid black;
+    padding-left: 10px;
+    
+}
+
+.rightBtmLeft, .rightBtmRight{
+    width: 50%;
+    float: left;
+    
+    border-top: 1px solid black;
+
+}
+
+.rightBtm{
+    margin-top: 15px;
+    float: left;
+    width: 100%;
+}
+/*  */
+/* header{
+    border-bottom: 2px solid black;
+} */
+
+
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  
+  @media only screen and (max-width: 1024px){
+    img{
+        width: 50%;
+        
+    }  
+    .hide{
+          display: none;
+      }
+      .middle{
+          width: 100%;
+      }
+      .right{
+          width: 100%
+      }
+  }
+
+  

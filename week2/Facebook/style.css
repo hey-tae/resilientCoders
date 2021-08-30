@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    background: #4667ac;
+    max-height: 100vh;
+    max-width: 100vw;
+
+}
+
+.logo{
+    width: 200px;
+    height: 200px;
+    margin:100px auto;
+    display: block;
+    
+}
+
+section input{
+    width: 700px;
+    padding: 15px;
+    margin: 15px auto;
+    display: block;
+    color: white;
+}
+
+section button{
+    margin: 15px auto;
+    display: block;
+    width: 700px;
+    padding: 15px;
+    color: white;
+    font-weight: bolder;
+}
+
+section a{
+    margin: auto;
+    display: block;
+    width: 700px;
+    padding: 15px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+.form{
+    margin-bottom: 500px;
+}

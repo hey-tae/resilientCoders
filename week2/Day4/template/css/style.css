@@ -1,0 +1,142 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* header{
+     background: black;
+     height: 15vh;
+}
+
+header li{
+     float: left;
+     width: 5%;
+     list-style: none;
+}
+
+header li a{
+     color: white;
+     
+     font-size: 1.2rem;
+     font-weight: bold;
+}
+
+main{
+     height:100vh;
+     border: 2px solid black;
+}
+
+main h3{
+     width: 46%;
+     float: left;
+     margin-left: 2%;
+} */
+
+
+header{
+     height: 100px;
+     background: black;
+}
+header li{
+     width: 5%;
+     float: left;
+}
+header li a{
+     color: white;
+     font-size: 18px;
+}
+main{
+     height: 600px;
+     border: 2px solid black;
+}
+main > h3{
+     width: 46%;
+     float: left;
+     margin-left: 2%;
+}
+
+.mainCow{
+     background-image: url(https://images.unsplash.com/photo-1596569646338-de6b8e53a0a8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGNvd3N8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+main > section{
+     height: 500px;
+     width: 45%;
+     float: left;
+     border: 2px solid black;
+     margin: 0 2%;
+     
+}
+main section section{
+     height: 250px;
+     width: 50%;
+     float: left;
+     border: 1px solid black;
+     background-image: url(https://images.unsplash.com/photo-1591068450470-1e3b0077b6e7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGNvd3N8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+     background-size: cover;
+     background-repeat: no-repeat; */
+}
+.news{
+     height: 400px;
+     border: 2px solid black;
+}
+.news section{
+     height: 250px;
+     width: 30%;
+     border: 2px solid black;
+     float: left;
+     margin: 1.5%;
+}
+
+img{
+     max-width: 100%;
+     
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+}
+
+header,footer{
+    height: 15vh;
+    border: 5px dashed black;
+    clear: both;
+}
+
+.small{
+    height: 70vh;
+    width: 15%;
+    border: 5px dashed green;
+    float: left;
+}
+
+.big{
+    height: 70vh;
+    width: 55%;
+    border: 5px dashed green;
+    float: left;
+}

@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+}
+
+header{
+    width: 100%;
+    border: 2px solid red;
+    height: 25vh;
+}
+
+section{
+    width: 33.3%;
+    border: 2px solid pink;
+    float: left;
+    height: 50vh;
+}
+
+footer{
+    width: 100%;
+    border: 2px solid purple;
+    height: 25vh;
+    clear: both;
+    
+}

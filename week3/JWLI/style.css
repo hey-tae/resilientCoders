@@ -1,0 +1,302 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  .alignright {
+      float: right;
+      padding: 0 0 10px 10px; /* note the padding around a right floated image */
+  }
+  
+  .alignleft {
+      float: left;
+      padding: 0 10px 10px 0; /* note the padding around a left floated image */
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  body {
+       color: #000;
+       font-size: 12px;
+       line-height: 1.4;
+       font-family: Helvetica, Arial, sans-serif;
+       margin: 0; padding: 0;
+  }
+  
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  
+header{
+    height: 6vh;
+}
+
+header ul{
+    list-style: none;
+    margin: 10px 0 0 35px;
+}
+
+header li{
+    display: inline;
+    margin-right: 8%; 
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+.headerContainer{
+    background: rgb(239, 241, 243);
+    height: 45vh;
+    width: 100%;
+}
+
+.logoContainer{
+   width: 65%;
+   float: left;
+   padding: 50px;
+   
+}
+
+.logoContainer input{
+    width: 40%;
+}
+
+.grayWoman{
+    float: left;   
+    width: 35%;    
+}
+
+
+/* mission container */
+
+.missionContainer{
+    width: 100%;
+    height: 45vh;
+    margin: 0%;
+}
+
+.missionContainer h2{
+    padding: 20px 20%;
+}
+
+.missionBoxes{
+    width: 100%;
+}
+.left, .right{
+    /* border: 3px solid pink; */
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 0 100px;
+}
+
+.pinkTop{
+    border-top: 3px solid pink;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.random{
+    text-align: center;
+    margin-top: 100px;
+    font-style: italic;
+    color: lightgray;
+}
+
+
+/* history section */
+
+.historyContainer{
+    width: 100%;
+    height: 90vh;
+    background: rgb(239, 241, 243);
+    margin: 0;
+    
+}
+
+.historyPs span{
+    text-align: left;
+    font-size: 1.5rem;
+    
+    
+}
+
+.historyPs{
+    width: 60%;
+    padding: 30px 30px;
+    margin-top: 30px;
+    float: left;
+}
+
+.historyPics{
+    width: 40%;
+    float: left;
+    padding: 30px;
+    
+    
+}
+
+.historyPics img{
+    border: 2px solid black;
+    /* width: 90%; */
+}
+
+.historyPics span{
+    text-align: right;
+}
+/* who we are */
+
+h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.founder img{
+    width:200px;
+    float: left;
+}
+
+
+.bio{
+    
+    border: 2px solid lightgray;
+    /* height: 40vh; */
+    padding: 30px;
+    margin: 30px;
+}
+.founderName{
+    font-weight: bold;
+}
+.founderBio{
+    float: right;
+    width: 80%;
+}
+
+/* bottom blurbbb */
+
+.btmBlurb{
+    /* border: 2px solid purple; */
+    width: 100%;
+    height: 30vh;
+    
+
+}
+
+.foundation, .simmons{
+    /* border: 2px solid green; */
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+.preFooter{
+    width: 100%;
+    height: 8vh;
+    background: rgb(175, 189, 201);
+    color: white;
+    font-size: 1rem;
+    padding: 15px 20px;
+    font-weight: lighter;
+    text-align: center;
+
+}
+
+.preFooter span{
+    margin-right: 30px;
+}
+
+input{
+    border-radius: 2px;
+    width: 20%;
+    padding: 8px;
+
+}
+
+button{
+    color:white;
+    background: rgb(132, 145, 153);
+    padding: 5px 25px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.wholeBtm{
+    width: 100%;
+    background: rgb(132, 145, 153);
+    height: 40vh;
+    
+}
+
+.copyright{
+    border-bottom: 2px solid white;
+    padding: 10px 25px;
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+.copyright li{
+    list-style:none;
+    float: left;
+    
+}
+/* .footer{
+    width: 5%;
+    float: left;
+} */
+.footerOptions ul+ul li{
+    display: block;
+    font-weight: normal;
+    list-style-type: none;
+
+}
+
+.footerTitles > li{
+    display: inline-block;
+    font-weight: bold;
+    float: left;
+    list-style-type: none;
+    width: 10%;
+    
+}
+
+
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  
+  @media only screen and (max-width: 480px){
+      .hide{
+          display: none;
+      
+      }   .headerContainer{
+          width: 100%;
+          }
+          
+
+

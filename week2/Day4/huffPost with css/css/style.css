@@ -1,0 +1,137 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header{
+     height: 15vh;
+     background: seagreen;
+}
+
+ul{
+     list-style: none;
+}
+.topNav{
+     float: left;
+     clear: both;
+}
+.bottomNav{
+     border-bottom: 2px solid lightgrey;
+     width: 100vw;
+     height: 22vh;
+     float: left;
+
+}
+
+h1{
+     padding: 120px;
+     font-size: 5rem;
+     text-align: center;
+}
+
+.images{
+     margin: 0 auto;
+
+}
+
+.left, .middle, .right{
+     border: 2px solid black;
+     width: 15%;
+     height: 50vh;
+     float: left;
+     
+}
+
+.left{
+     background-image: url(https://images.unsplash.com/photo-1555888997-03e986fc157b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b2xkJTIwbWFufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+     background-size: contain;
+}
+
+.middle{
+     background-image: url(https://images.unsplash.com/photo-1608681299041-cc19878f79f1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b2xkJTIwbWFufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+     background-size: contain;
+}
+
+.right{
+     background-image: url(https://images.unsplash.com/photo-1603711549213-768a23c97437?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8b2xkJTIwbWFufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+     background-size: contain;
+}
+/* .centerDiv
+    {
+      width: 60%;
+      height:400px;
+      margin: 0 auto;
+      border: 2px solid black;
+      
+    }
+    .div1
+    {
+      width: 33%;
+      height:400px;
+      border: 2px solid black;
+      float:left;
+      margin: 5px;
+    }
+    .div2
+    {
+      width: 34%;
+      height:400px;
+      border: 2px solid black;
+      float:left;
+      margin: 5px;
+    }
+    .div2
+    {
+      width: 33%;
+      height:400px;
+      border: 2px solid black;
+      float:left;
+      margin: 5px;
+    } */
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
