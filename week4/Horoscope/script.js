@@ -9,7 +9,7 @@ let results = document.getElementById('zodiacReturn')
          document.getElementById('birthDay').value = '';
 // console.log(results) --> testing dom selections
 if (birthMonth == 12 && birthDay > 22 && birthDay <= 31 || birthMonth == 01 && birthDay >= 0 && birthDay <=19){
-             results.innerText = "Capricorn" 
+             results.innerText = "Responsible Capricorn‘s animal is the mountain goat, and its glyph—showing a goat’s hoof and the tail of a fish—is one of the most interesting of the zodiac signs. As a grounded earth sign, Capricorn is one of the hardest workers. They’re always looking to climb to the next rung on the ladder of success. That’s the determined goat part. The fishtail represents Capricorn’s Greek mythology roots as the Sea-goat. A creature that represents the watery, emotional undercurrent of Capricorn’s sometimes unexpected nature." 
              console.log(birthMonth)
              console.log(results)
              //Capricorn
