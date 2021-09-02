@@ -21,7 +21,7 @@ convertFarToCelc(25);
 // Create a function that choses a random throw of rock, paper, scissors, lizard, spock and alerts the random choice
 
 function randomChoice(){
-    let num = Math.floor(Math.random() * 10 + 1
+    let num = Math.floor(Math.random(num) * 10 + 1
     if(num < 2){
         alert('rock')
     }else if(num < 4){
@@ -33,6 +33,6 @@ function randomChoice(){
     }else(alert('nope'))
 }
 
-randomChoice()
+randomChoice(2)
 
 // Create a function that takes in two numbers. If the second number is divisible by the first, alert the product of those two numbers. If not, alert the sum of those two numbers.

@@ -7,6 +7,13 @@
 //If under over 30, tell them there is nothing left to look forward too
 
 
+
+if(age <= 16){
+    alert('you cannot drive')
+}else if(age > 16 && <= 18){
+    alert('you can't hate from outside the clurb)
+}
+
 //--- Harder
 //On click of the h1
 //Take the value from the input
