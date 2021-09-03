@@ -154,7 +154,8 @@ li a{
 .historyPics{
     width: 40%;
     float: left;
-    padding: 30px;
+    padding: 50px;
+   
     
     
 }
@@ -265,11 +266,36 @@ button{
     float: left;
     
 }
+
+.footerUl{
+    /* border: 1px solid black; */
+    width: 11%;
+    float: left;
+    margin-left: 15px;
+    margin-right: 25px;
+}
+
+.footerUl li {
+    list-style: none;
+}
+
+.footerUl ul {
+    font-weight: bold;
+}
+
+.footerTitle{
+    font-weight: bold;
+}
+
+
+
+
+
 /* .footer{
     width: 5%;
     float: left;
 } */
-.footerOptions ul+ul li{
+/* .footerOptions ul+ul li{
     display: block;
     font-weight: normal;
     list-style-type: none;
@@ -283,7 +309,9 @@ button{
     list-style-type: none;
     width: 10%;
     
-}
+} */
+
+
 
 
   /******************************************
