@@ -4,7 +4,7 @@
     	<meta charset="utf-8">
     	<meta name="description" content="Your description goes here">
     	<meta name="keywords" content="one, two, three">
-
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Blank Template</title>
 
 		<!-- external CSS link -->
@@ -18,18 +18,18 @@
 		 <header>
 			<nav>
 				<ul>
-					<li><img src="./BBC-logo.png" alt=""></li>
-					<li> <span class="fas fa-user-circle"></span><a href="#">Sign In</a></li>
-					<li><a href="#">News</a></li>
-					<li><a href="#">Sports</a></li>
-					<li><a href="#">Weather</a></li>
-					<li><a href="#">Shop</a></li>
-					<li><a href="#">Earth</a></li>
-					<li><a href="#">Travel</a></li>
-					<li><a href="#">Capital</a></li>
-					<li><a href="#">Culture</a></li>
-					<li><a href="#">More</a></li>
-					<li><input type="search" name="search" id="search" placeholder="Search"></li>
+					<li class="hide"><img src="./BBC-logo.png" alt=""></li>
+					<li class="hide"> <span class="fas fa-user-circle"></span><a href="#">Sign In</a></li>
+					<li class="hide"><a href="#">News</a></li>
+					<li class="hide"><a href="#">Sports</a></li>
+					<li class="hide"><a href="#">Weather</a></li>
+					<li class="hide"><a href="#">Shop</a></li>
+					<li class="hide"><a href="#">Earth</a></li>
+					<li class="hide"><a href="#">Travel</a></li>
+					<li class="hide"><a href="#">Capital</a></li>
+					<li class="hide"><a href="#">Culture</a></li>
+					<li class="hide"><a href="#">More</a></li>
+					<li class="searchBox"><input type="search" name="search" id="search" placeholder="Search"></li>
 				</ul>
 			</nav>
 		</header>
@@ -39,34 +39,36 @@
 			<section class="topMain">
 			<section class="titleDate">
 			<h3>Welcome To The BBC.com</h3>
-			<h3 class="date">Wednesday, 11 January</h3>	
+			<h3 class="date hide">Wednesday, 11 January</h3>	
 			</section>
 			
 			<section class="topImages clearfix">
 			<section class="mainCow clearfix">
+				<section class="mainParagraph">
 				<h1>Trump did something</h1>
 				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui voluptate totam amet corrupti ad nihil excepturi voluptatem harum, eligendi sapiente! Reprehenderit consequatur ipsam ad fuga culpa molestias id corrupti odit! </p>
 				<span class="usa"><span class="break">|</span>  USA</span>
+			</section>
 			</section> 
 
 			<section>
-				<section class="middleBoxes clearfix">
+				<section class="middleBoxes clearfix hide">
 
-				<section class="boxLTop">
+				<section class="boxLTop hide">
 					<h2>Something was compromised in these White united states</h2>
 					<span><span class="break">|</span>  CANADA</span>
 				</section>
-				<section class="boxLBtm">
+				<section class="boxLBtm hide">
 					<h2>Oxford academics found comparable to ICDC </h2>
 					<span><span class="break">|</span>  EDUCATION</span>
 				</section>
 				</section>
-				<section class="rightBoxes clearfix">
+				<section class="rightBoxes clearfix hide">
 				<section class="boxRTop">
 					<h2>Open Offices are bad for our health just some extra lines</h2>
 					<span><span class="break">|</span>  CAPITAL</span>
 				</section>
-				<section class="boxRBtm">
+				<section class="boxRBtm hide">
 					<h2>This line needs to be two lines longso this is just some rando text </h2>
 					<span><span class="break">|</span>  MAMA</span>
 					</section>
@@ -84,9 +86,9 @@
 		
 
 		<section class="newsImages">
-			<section class="nImage"></section>
-			<section class="nImage"></section>
-			<section class="nImage"></section>
+			<section class="nImage imageLeft"></section>
+			<section class="nImage imageMiddle"></section>
+			<section class="nImage imageRight hide"></section>
 		</section>
 		</section>
 	

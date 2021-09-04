@@ -128,7 +128,7 @@ h3{
 
 .mainCow{
      width: 45%;
-     background-image: url(/trumpMain.jpeg);
+     background-image: url('/tsgang.jpeg');
      float: left;
      height: 50vh;
      margin: 0px 25px;
@@ -152,7 +152,7 @@ p{
 }
 
 h2, span{
-     padding-top: 16%;
+     padding-top: 14%;
      margin-left:5px;
      /* padding-left: 10px; */
      color: white;
@@ -259,7 +259,8 @@ img{
 .newsImages{
      width: 100%;
      /* border: 1px solid green; */
-     height: 40vh;
+     height: 35vh;
+     margin-bottom: 25px;
      /* background: pink; */
      clear: both;
      overflow: hidden;
@@ -275,8 +276,53 @@ img{
      
 }
 
+.imageLeft{
+     background-image: url('/buzz.jpeg');
+}
+
+.imageMiddle{
+     background-image: url('/jessie.jpeg');
+}
+
+.imageRight{
+     background-image: url('/forkman.jpeg');
+}
 
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media (max-width: 480px) {
+     .hide {
+       display: none;
+     }
+     .searchBox{
+          width: 20%;
+          padding-top: 20px;
+          padding-left: 25px;
+     }
+     #search{
+          font-size: 20px;
+     }
+     h3{
+          width: 100%;
+          text-align: center;
+     }
+     .mainCow{
+          width: 85%;
+     }
+     .mainParagraph{
+          margin-top: 50% ;
+     }
+     #newsHeading{
+          margin-top: 0;
+     }
+     
+     .imageLeft, .imageMiddle{
+          width: 38%;
+          height: 25vh;
+     }
+   }
+
+ 
