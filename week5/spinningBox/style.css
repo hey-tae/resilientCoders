@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box; 
+}
+
+.boxes{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+
+}
+
+#boxLeft, #boxMiddle, #boxRight{
+    border: 2px solid purple;
+    width: 25%;
+    height: 75vh;
+    margin: 0 25px 0 35px;
+}
+
+/* #boxLeft{
+    transform: rotate(45deg);
+    background-color: yellow;
+} */
