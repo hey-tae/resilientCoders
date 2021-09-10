@@ -4,3 +4,5 @@ checkbox // appended checkbox image as link but wondering if there is a way to c
 maybe createElement for the li and then .innerHTML for the input? unsure if that would make the checkbox able to work with another function since its not a variable 
 
 .remove is working on first click but unable to add list items unless page is refreshed 
+
+added event listener to li but its not working 
