@@ -17,7 +17,8 @@ let taskList = document.getElementById('taskItems') // ul
 let tasksRemaining = document.getElementById('tasksRemaining')
 let wholeClearBtn = document.getElementById('clearWholeList')
 let completedClearBtn = document.getElementById('clearSingleTask')
-let counter = 0
+// let finishedList = document.getElementById('finishedItems')
+let totalTasks = 0
 
 
 //FUNCTIONS
@@ -33,6 +34,8 @@ function addNewTask (){
     taskList.appendChild(taskItem)
     console.log(taskItem)
     input.value = ""
+    totalTasks += 1
+    tasksRemaining.innerText = "Total tasks remaining: " + totalTasks
     
     // - checkbox/strikethrough
     // let check = document.createElement('a')
@@ -51,12 +54,18 @@ function clearAllItems(){
 // - clear completed items
 
 function clearCompletedItems(){
+    // let finishedItem = document.createElement('li')
+    // finishedList.appendChild(finishedItem)
     taskList.querySelectorAll('li').forEach(function (element){
         if(element.classList.contains('completed')){
             element.remove()
+            // finishedList.innerHTML = element
         }
     }
     )
+
+    // remove from count
+    // let total = totalTasks - (taskItem.length)
 }
 
 
