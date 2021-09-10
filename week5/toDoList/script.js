@@ -13,10 +13,10 @@
 //DOM HANDLERS
 let input = document.getElementById('newTask')
 let addTaskBtn = document.getElementById('addNewTask')
-let taskList = document.getElementById('taskItems')
+let taskList = document.getElementById('taskItems') // ul
 let tasksRemaining = document.getElementById('tasksRemaining')
 let wholeClearBtn = document.getElementById('clearWholeList')
-let singleClearBtn = document.getElementById('clearSingleTask')
+let completedClearBtn = document.getElementById('clearSingleTask')
 let counter = 0
 
 
@@ -27,8 +27,7 @@ let counter = 0
 
 function addNewTask (){
     let taskItem = document.createElement('li')
-    taskItem.classList.add('completed')
-    
+    taskItem.addEventListener('click', completedTask)
     taskItem.innerText = input.value
     console.log(taskItem.value)
     taskList.appendChild(taskItem)
@@ -43,14 +42,27 @@ function addNewTask (){
 
 }
 
-function clearAllItems (){
-    taskList.remove()
-}
-// - clear completed list
 // - clear whole list
+function clearAllItems(){
+    taskList.innerHTML = ""
+    
+}
 
-function completedTask(){
-    taskItem.classList.toggle('completed')
+// - clear completed items
+
+function clearCompletedItems(){
+    taskList.querySelectorAll('li').forEach(function (element){
+        if(element.classList.contains('completed')){
+            element.remove()
+        }
+    }
+    )
+}
+
+
+
+function completedTask(event){
+    event.target.classList.toggle('completed')
 }
 
 
@@ -59,4 +71,4 @@ function completedTask(){
 
 addTaskBtn.addEventListener('click', addNewTask)
 wholeClearBtn.addEventListener('click', clearAllItems)
-taskItem.addEventListener('click', completedTask)
+completedClearBtn.addEventListener('click', clearCompletedItems)
