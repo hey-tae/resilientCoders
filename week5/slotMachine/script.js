@@ -8,56 +8,87 @@
 //winning combos / win = 10x bet
 
 //VARIABLES & DOM HANDLERS
-//totalMoney var  - output for total 
-let reelLeft = document.getElementById('reelLeft')
-let reelMiddle = document.getElementById('reelMiddle')
-let reelRight = document.getElementById('reelRight')
-let minBtn = document.getElementById('minBet')
-let maxBtn = document.getElementById('maxBet')
-let totalDisplay = document.getElementById('totalMoney')
+let minBet = document.querySelector('#minBet') 
+let maxBet = document.querySelector('#maxBet') 
+let pictureArray = ['https://images.unsplash.com/photo-1610397857552-1ce126b56724?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA4fHxjYXNpbm98ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60', 'https://images.unsplash.com/photo-1522617889820-47708e025180?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGNhc2lub3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60', 'https://images.unsplash.com/photo-1509101351424-8ac5ae0b5982?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fGNhc2lub3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60', 'https://images.unsplash.com/photo-1512767254318-423c816efbf3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njl8fGNhc2lub3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60', 'https://images.unsplash.com/photo-1626183462405-f1469783dff2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTJ8fGNhc2lub3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60']
+
+let bet = 0
+let total = 1000
 
 //FUNCTIONS
-//event min (function)
 
-
-
-//checkForWin (function) that compares the 3 reels 
-//conditional statement for a win/loss
-//if(won){
-   // addMoneyTotal (function)
-//}else {
-    //removeMoneyTotal (function)
-//}
-
-//event max (function)
-//checkForWin (function) that compares the 3 reels 
-//conditional statement for a win/loss
-//if(won){
-   // addMoneyTotal (function)
-//}else {
-    //removeMoneyTotal (function)
-//}
-
-//checkForWin (function)
-function randomNumber(){
-    let reel1 =  Math.floor(Math.random() * 5)
-    console.log('number is '+ reel1)
-
+function placeMinBet(){
+    bet += 10
+    document.querySelector('#betAmount').innerText = bet
+    // console.log(bet)
 }
 
- randomNumber()
- randomNumber()
- randomNumber()
- randomNumber()
- randomNumber()
+function placeMaxBet(){
+    bet += 100
+    document.querySelector('#betAmount').innerText = bet
+}
 
 
-//need to get random number from each reel using math.random 3 times
-//conditional statement to show win or loss based on combo
-//if(reel1 === reel2 && reel2 === reel3){
-//    return true
-//}else{
-//    return false
-//}
+let placeBetsRunSlot = document.querySelector('#tryLuck')
+placeBetsRunSlot.addEventListener('click', spinButton)
+
+
+
+function spinButton(){
+    bet = document.querySelector('#betAmount').innerText
+    if (total - bet < 0) {
+        alert('Pack it up!')
+        bet = 0 
+        total = 1000
+        document.querySelector('#totalBalance').innerText = total
+        document.querySelector('#betAmount').innerText = bet
+    }else{
+        let reel1 = slotSpinning()
+        let reel2 = slotSpinning()
+        let reel3 = slotSpinning()
+
+        document.querySelector('#reel1').setAttribute('src', pictureArray[reel1])
+        document.querySelector('#reel2').setAttribute('src', pictureArray[reel2])
+        document.querySelector('#reel3').setAttribute('src', pictureArray[reel3])
+
+        checkWinner()
+
+        bet = 0
+        document.querySelector('#betAmount').innerText = bet
+    }
+}
+
+function slotSpinning(){
+    return Math.floor(Math.random() * 5)
+}
+
+
+function checkWinner(){
+    if (reel1 === reel2 && reel1 === reel3){
+        total += (bet * 10)
+        document.querySelector('#totalBalance').innerText = Number(total) + totalBalance
+        document.getElementById('winningMessage').innerText = 'DO IT LIKE ITS YOUR BDAY'
+                
+    } else{
+        total -= bet
+        document.querySelector('#totalBalance').innerText = Number(total)
+        document.getElementById('losingMessage').innerText = 'Not This Time Pal'
+    }
+}
+
+let resetTheBet = document.querySelector('#resetBetAmount')
+resetTheBet.addEventListener('click', resetBetAmount)
+
+function resetBetAmount(){
+    bet = 0
+    total = 1000
+    document.querySelector('#totalBalance').innerText = total
+    document.querySelector('#betAmount').innerText = bet
+}
+
 
 //EVENT LISTENERS
+minBet.addEventListener('click', placeMinBet) 
+maxBet.addEventListener('click', placeMaxBet)
+
+
